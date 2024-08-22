@@ -1,12 +1,56 @@
+#container_title {
+    position: relative;
+    width: 100%;
+    padding-top: 20%; 
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+#container_title #title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    transform: translate(-50%, -50%); 
+}
+
+*{
+    background-color: #ddd;
+}
+
 #resultadoFinal {
- background-color: rgb(71, 197, 219);
  display: grid;
-            place-items: center; 
-            border: 2px solid black; 
+            place-items: center;  
 }
 
 #resultado {
     text-align: center;
     font-size: large;
     font: 1em verdana;
+}
+
+@media (max-width: 850px) {
+    #button{
+        margin-bottom: 10%;
+     }
+
+     #container_title {
+        position: relative;
+        width: 100%;
+        padding-top: 50%; /* Relación de aspecto 2:1 (50% altura del ancho) */
+        overflow: hidden;
+        background-color: #ddd;
+    }
+    
+    #container_title #title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        transform: translate(-50%, -50%); 
+    }
 }
