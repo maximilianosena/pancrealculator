@@ -31,7 +31,7 @@
     font: 1em verdana;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1250px) {
     #button{
         margin-bottom: 10%;
      }
@@ -41,7 +41,7 @@
         width: 100%;
         padding-top: 50%; /* Relación de aspecto 2:1 (50% altura del ancho) */
         overflow: hidden;
-        background-color: #0e0027;
+        background-color: #9583B6;
     }
     
     #container_title #title {
@@ -55,7 +55,7 @@
     }
     
     *{
-        background-color: #180044;
+        background-color: #9583B6;
     }
 
 }
