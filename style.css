@@ -1,0 +1,12 @@
+#resultadoFinal {
+ background-color: rgb(71, 197, 219);
+ display: grid;
+            place-items: center; 
+            border: 2px solid black; 
+}
+
+#resultado {
+    text-align: center;
+    font-size: large;
+    font: 1em verdana;
+}
