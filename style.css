@@ -41,7 +41,7 @@
         width: 100%;
         padding-top: 50%; /* Relación de aspecto 2:1 (50% altura del ancho) */
         overflow: hidden;
-        background-color: #9583B6;
+        background-color: #0e0027;
     }
     
     #container_title #title {
@@ -55,7 +55,7 @@
     }
     
     *{
-        background-color: #9583B6;
+        background-color: #180044;
     }
 
 }
