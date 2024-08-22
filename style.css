@@ -55,11 +55,7 @@
     }
     
     *{
-        background-color: #ddd;
+        background-color: #bfabe4;
     }
 
-    legend .input-group {
-        width: 100%;
-        padding-top: 50%;
-    }
 }
