@@ -44,8 +44,12 @@ function calculadora() {
     let x = (aComerValue * tercerValor) / cdadValue
 
     insulina = total*x
-
-    input_resultado.innerHTML = `${insulina} unidades de Insulina`
+    
+    if (insulina <= 1){
+        input_resultado.innerHTML = `${insulina} unidad de Insulina`
+    } else {
+     input_resultado.innerHTML = `${insulina} unidades de Insulina`
+}
 }
 
 
