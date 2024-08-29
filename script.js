@@ -46,9 +46,9 @@ function calculadora() {
     insulina = total*x
     
     if (insulina <= 1){
-        input_resultado.innerHTML = `${insulina} unidad de Insulina`
+        input_resultado.innerHTML = `${insulina.toFixed(2)} unidad de Insulina`
     } else {
-     input_resultado.innerHTML = `${insulina} unidades de Insulina`
+     input_resultado.innerHTML = `${insulina.toFixed(2)} unidades de Insulina`
 }
 }
 
