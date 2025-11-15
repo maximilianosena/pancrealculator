@@ -13,10 +13,7 @@ h1 {
  display: grid;
             place-items: center;  
 }
-  #forma {
-        display: grid;
-            place-items: center;
-     }
+ 
 
 #resultado {
     text-align: center;
@@ -27,11 +24,6 @@ h1 {
 @media (max-width: 1250px) {
     #button{
         margin-bottom: 10%;
-     }
-
-     #forma {
-        display: grid;
-            place-items: center;
      }
 
 }
