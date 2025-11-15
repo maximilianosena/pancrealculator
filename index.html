@@ -25,9 +25,15 @@
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="ratio"  id="ratio" required value="0">
           </div>
        <fieldset>
-        <legend>Información Tabla Nutricional</legend>
+        <legend>Información Nutricional</legend>
             <div class="input-group mb-3">
-                <span class="input-group-text" >Indique la porción en gramos:</span>
+                <span class="input-group-text" >Indique la forma en que quiere ingresar su información:</span>
+                
+                <select name="forma" id="forma">
+                    <option value="" style="text-align: center;">Formas</option>
+                    <option value="gramos">Gramos <small>(ideal cuando tenés la tabla nutricional)</small></option>
+                    <option value="unidades">Unidades <small>(se trata de alimentos individuales, ejemplo una manzana)</small></option>
+                </select>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="cdad_tabla" id="cdad_tabla" required value="0">
             </div>
             <div class="input-group mb-3">
@@ -46,9 +52,8 @@
                 <span class="input-group-text" >Fibra Dietaria:</span>
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="fibra" id="fibra" value="0">
             </div>
-            <div class="input-group mb-3">
-                <span class="input-group-text" >¿Cuantos gramos consumirá?:</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="fibra" id="comer" value="0">
+            <div class="input-group mb-3" id="container_cantidad">
+                
             </div>
             <button type="button" class="btn btn-primary" id="button"> Calcular</button>
        </fieldset>

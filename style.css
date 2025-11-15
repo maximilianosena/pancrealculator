@@ -16,6 +16,8 @@
     transform: translate(-50%, -50%); 
 }
 
+
+
 *{
     background-color: #ddd;
 }
@@ -58,4 +60,14 @@
         background-color: #9583B6;
     }
 
+}
+
+.error {
+    border: 2px solid red !important;
+    background-color: #ffe6e6;
+}
+
+.ok {
+    border: 2px solid rgb(30, 143, 20) !important;
+    background-color: #ffe6e6;
 }
