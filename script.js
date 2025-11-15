@@ -12,14 +12,14 @@ let button = document.getElementById("button")
 let container = document.getElementById("container_cantidad")
 let total = 0
 let insulina = 0
-const valor = forma_unidad.value;
 
- if (valor ==='' || !valor) {
-    button.disabled = true
-}
+let valor = ''; 
 
-forma_unidad.addEventListener('change', () => {
 
+forma_unidad.addEventListener('change', (e) => {
+
+    valor = e.target.value
+    
     if (valor==='gramos')
     {
     localStorage.setItem('forma', valor);
@@ -32,6 +32,9 @@ forma_unidad.addEventListener('change', () => {
 }
 });
 
+ if (valor ==='' || !valor) {
+    button.disabled = true
+}
 
 
 function calculadora() {
