@@ -124,9 +124,7 @@ function resultado_final(){
     }}
 
 
-window.addEventListener("beforeunload", () => {
-    localStorage.removeItem("forma");
-});
+
 
 button.addEventListener("click", ()=>{
     resultado_final()
