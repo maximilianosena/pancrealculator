@@ -1,3 +1,9 @@
+.global {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
 
 *{
@@ -14,6 +20,21 @@ h1 {
             place-items: center;  
 }
  
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    background: white;
+}
+
+.titulo-select{
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: #FFFF;
+}
 
 #resultado {
     text-align: center;
@@ -26,6 +47,7 @@ h1 {
         margin-bottom: 10%;
      }
 
+    
 }
 
 .error {
