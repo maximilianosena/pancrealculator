@@ -19,13 +19,14 @@ const valor = forma_unidad.value;
 }
 
 forma_unidad.addEventListener('change', () => {
-    localStorage.setItem('forma', valor);
 
     if (valor==='gramos')
     {
+    localStorage.setItem('forma', valor);
     container.innerHTML= `<span class="input-group-text" >¿Cuantos ${valor} consumirá?:</span> <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="fibra" id="comer" value="0">`
     button.disabled = false
 } else {
+    localStorage.setItem('forma', valor);
     container.innerHTML= `<span class="input-group-text" >¿Cuantas ${valor} consumirá?:</span> <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="fibra" id="comer" value="0">`
     button.disabled = false
 }
@@ -124,7 +125,9 @@ function resultado_final(){
     }}
 
 
-
+window.addEventListener("beforeunload", () => {
+    localStorage.removeItem("forma");
+});
 
 button.addEventListener("click", ()=>{
     resultado_final()
